@@ -1,0 +1,88 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300italic,300,400italic,700italic,700);
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "Lato";
+}
+
+#calendrier,
+#calendrier li {
+	margin: 0;
+	padding: 0;
+}
+
+#calendrier {
+	height: 600px;
+	width: 1600px;
+}
+
+#calendrier li {
+	display: inline-block;
+	width: 200px;
+	height: 200px;
+	vertical-align: top;
+	line-height: 200px;
+	text-align: center;
+}
+
+li.turquoise{
+	background-color: #37BC9B;
+}
+
+li.turquoise a:link,
+li.turquoise a:visited {
+	color: #F9E9C2;
+	text-decoration: none;
+}
+
+li.marron {
+	background-color: #5B4831;
+}
+
+li.marron a:link,
+li.marron a:visited {
+	color: #37BC9B;
+	text-decoration: none;
+}
+
+li.beige {
+	background-color: #F9E9C2;
+}
+
+li.beige a:link,
+li.beige a:visited {
+	color: #5B4831;
+	text-decoration: none;
+}
+
+
+#calendrier li img {
+	width: auto;
+	height: 150px;
+}
+
+#calendrier li h3 {
+	font-size: 70px;
+}
+
+.btn_close {
+	color: #37BC9B;
+}
+
+.pageCalendrier h2 {
+	text-align: center;
+	font-size: 40px;
+}
+
+.pageCalendrier picture {
+	text-align: center;
+}
+
+.pageCalendrier picture img {
+	max-height: 150px;
+}
+
+.pageCalendrier h2 img {
+	width: 50px;
+}
