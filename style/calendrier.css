@@ -6,9 +6,10 @@
 	font-family: "Lato";
 }
 
-a{
+a,li{
 	text-decoration: none;
 	color: #000;
+	list-style: none;
 }
 a:hover{
 	color: #37BC9B;
@@ -26,6 +27,7 @@ nav{
 	top: 0;
 	bottom: 0;
 	border-right: 5px solid #37BC9B;
+	z-index: 2;
 }
 
 nav img{
@@ -52,6 +54,8 @@ nav ul li {
 
 /***CALENDRIER***/
 
+html, body{ height: 100%; margin: 0; }
+
 #calendrier,
 #calendrier li {
 	margin: 0;
@@ -59,17 +63,20 @@ nav ul li {
 }
 
 #calendrier {
-	height: 600px;
-	width: 1600px;
+	display: flex;
+	flex-direction: column;
+	flex-flow: column wrap;
+	width: 100%;
+	height: 100%;
+	margin-left: 200px;
 }
 
 #calendrier li {
-	display: inline-block;
-	width: 200px;
-	height: 200px;
-	vertical-align: top;
-	line-height: 200px;
+	flex: 1 1 33%;
+	min-width: 250px;
+	height: 100%;
 	text-align: center;
+	position: relative;
 }
 
 li.turquoise{
@@ -110,6 +117,13 @@ li.beige a:visited {
 
 #calendrier li h3 {
 	font-size: 70px;
+	width: 100%;
+	height: 20px;
+	line-height: 20px;
+	position: absolute;
+	top: 50%;
+	margin-top: -10px;
+	text-align: center;
 }
 
 .btn_close {
@@ -131,4 +145,33 @@ li.beige a:visited {
 
 .pageCalendrier h2 img {
 	width: 50px;
+}
+
+.jour25{
+	background-color: red;
+}
+
+/****CONTACT****/
+
+#contact{
+	margin-left: 200px;
+}
+
+.map{
+	width: 500px;
+	height: 100%;
+	position: fixed;
+	background-color: blue;
+}
+
+.form{
+	margin-left: 500px;
+}
+
+.form input{
+	display: block;
+}
+
+.form p{
+	margin: auto;
 }
