@@ -50,11 +50,11 @@ $(document).ready(function() {
 				$("#calendrier").append('<li id="' + index
 				+ '" class="' + couleur
 				+ '"><h3><a href="jour' + jour + '.html"><img src="images/'
-				+ jour + '-01.png"/></a></h3></li>');
+				+ jour + '.png"/></a></h3></li>');
 			}
 
 			// Affichage du contenu sur la bonne page
-			$(".contenu" + jour).append('<h2>' + jour + ' <img src="images/' + jour + '-01.png"/> DEC</h2>'
+			$(".contenu" + jour).append('<h2>' + jour + ' <img src="images/' + jour + '.png"/> DEC</h2>'
 			+ '<picture>' + media + '</picture>'
 			+ contenu);
 
@@ -62,7 +62,7 @@ $(document).ready(function() {
 			$(".ouverture").click(function(){
 				identifiant = parseInt($(this).parent().parent().attr('id'));
 				articles[identifiant].Statut = "ouvert";
-				localStorage["articles"] = JSON.stringify(articles);		
+				localStorage["articles"] = JSON.stringify(articles);
 				location.reload();
 			});
 		});
