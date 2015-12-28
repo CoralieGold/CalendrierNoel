@@ -36,10 +36,17 @@
 				<input type="text" id="prenom" placeholder="Prénom" required>
 				<input type="text" id="nom" placeholder="Nom" required>
 				<input type="text" id="email" placeholder="Email" required>
-				<input type="radio" name="type-demande" value="liste">Je veux envoyer ma liste de cadeaux<br>
-				<input type="radio" name="type-demande" value="question">J'ai une question
-				<textarea name="message" rows="8" cols="40"></textarea>
+				<div class="radio-inline">
+					<p><input type="radio" name="type-demande" value="liste"></p>
+					<p>Je veux envoyer ma liste de cadeaux</p>
+				</div>
+				<div class="radio-inline">
+					<p><input type="radio" name="type-demande" value="question"></p>
+					<p>J'ai une question</p>
+				</div>
+				<textarea name="message"></textarea>
 				<input type="submit" value="ENVOYER">
+				<img src="images/contact.png" alt="Un renne apport les cadeaux" />
 			</form>
 		</div>
 	</map>

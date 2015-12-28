@@ -1,9 +1,11 @@
+/***FONT***/
 @import url(https://fonts.googleapis.com/css?family=Lato:400,300italic,300,400italic,700italic,700);
 
+/***GENERAL***/
 * {
 	margin: 0;
 	padding: 0;
-	font-family: "Lato";
+	font-family: "Lato", sans-serif;
 }
 
 a,li{
@@ -16,6 +18,10 @@ a:hover{
 }
 a.active{
 	color: #37BC9B;
+}
+
+.italique{
+	font-style: italic;
 }
 
 /****MENU****/
@@ -155,23 +161,60 @@ li.beige a:visited {
 
 #contact{
 	margin-left: 200px;
+	font-size: 18px;
 }
 
 .map{
-	width: 500px;
+	width: 600px;
 	height: 100%;
 	position: fixed;
-	background-color: blue;
+	background-color: #DDE4E9;
+	top: 0;
 }
 
 .form{
-	margin-left: 500px;
-}
-
-.form input{
-	display: block;
+	margin-left: 600px;
+	padding: 50px;
 }
 
 .form p{
-	margin: auto;
+	margin: 0 auto 10px;
+}
+
+.form input[type="text"]{
+	display: block;
+	width: 100%;
+	height: 40px;
+	margin: 20px auto;
+}
+
+.form input[type="radio"]{
+	display: block;
+}
+
+.form textarea{
+	width: 100%;
+	height: 250px;
+}
+
+.form input[type="submit"]{
+	display: block;
+	width: 150px;
+	height: 45px;
+	background-color: #E9573F;
+	border: none;
+	margin: 20px 0 0;
+	font-size: 20px;
+	cursor: pointer;
+}
+
+.radio-inline p{
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.form img{
+	position: absolute;
+	bottom: 15px;
+	right: 15px;
 }
