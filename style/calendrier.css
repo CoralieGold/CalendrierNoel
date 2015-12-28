@@ -113,6 +113,8 @@ li.beige a:visited {
 #calendrier li img {
 	width: auto;
 	height: 150px;
+	text-align: center;
+	margin-top: -25%;
 }
 
 #calendrier li h3 {
@@ -174,4 +176,42 @@ li.beige a:visited {
 
 .form p{
 	margin: auto;
+}
+
+
+/*****A PROPOS *****/
+#apropos{
+	margin-left: 200px;
+}
+
+p, h1, h2{
+	margin-left: 10px;
+}
+
+h1{
+	color: #36B69B;
+	font-size: 35px;
+	text-align: center;
+	font-weight: 300;
+	text-transform: uppercase;
+}
+
+h2{
+	color: #E9573F;
+	font-weight: 400;
+}
+
+p{
+	margin: 10px;
+}
+
+#membres li{
+	display: inline-block;
+	width: 24%;
+	text-align: center;
+}
+
+#membres li img{
+	background-color: #F9E9C2;
+	border-radius: 50px;
 }
