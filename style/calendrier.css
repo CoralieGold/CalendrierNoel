@@ -212,6 +212,15 @@ li.beige a:visited {
 .radio-inline p{
 	display: inline-block;
 	vertical-align: middle;
+<<<<<<< HEAD
+=======
+}
+
+.form img{
+	position: absolute;
+	bottom: 15px;
+	right: 15px;
+>>>>>>> origin/master
 }
 
 .form img{
