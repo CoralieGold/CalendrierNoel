@@ -39,6 +39,7 @@ $(document).ready(function() {
 			jour = articles[index].Jour;
 			media = articles[index].Media;
 			contenu = articles[index].Contenu;
+			lien = articles[index].Lien;
 
 			if(statut == "ferme"){
 				$("#calendrier").append('<li id="' + index
@@ -49,14 +50,15 @@ $(document).ready(function() {
 			if(statut == "ouvert"){
 				$("#calendrier").append('<li id="' + index
 				+ '" class="' + couleur
-				+ '"><h3><a href="jour' + jour + '.html"><img src="images/'
-				+ jour + '.png"/></a></h3></li>');
+				+ '"><a href="jour' + jour + '.html"><img src="images/'
+				+ jour + '.png"/></a></li>');
 			}
 
 			// Affichage du contenu sur la bonne page
 			$(".contenu" + jour).append('<h2>' + jour + ' <img src="images/' + jour + '.png"/> DEC</h2>'
 			+ '<picture>' + media + '</picture>'
-			+ contenu);
+			+ contenu
+			+ '<a href="' + lien + '" target="_blank">Voir plus</a>');
 
 			// Au clique sur une case du calendrier
 			$(".ouverture").click(function(){
