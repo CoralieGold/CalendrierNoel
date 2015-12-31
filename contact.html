@@ -11,8 +11,8 @@
 </script>
 <![endif]-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script src="js/calendrier.js"></script>
-<script src="js/jquery.mousewheel.js"></script>
+<script src="js/maps.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBtBgMxdfTt6psQOgPnn5mDaNWTCbrrGvM&callback=initMap" async defer></script>
 </head>
 <body>
 	<nav>
@@ -25,11 +25,9 @@
 			</ul>
 		</div>
 	</nav>
+		<div id="map"></div>
 
-	<div id="contact">
-		<div class="map">
-		</div>
-		<div class="form">
+		<div id="form">
 			<p class="italique">Vous voulez nous faire parvenir votre liste de Noël ? Ou nous poser des questions ?</p>
 			<p>Remplissez le formulaire ci-dessous !</p>
 			<form action="">
@@ -46,10 +44,9 @@
 				</div>
 				<textarea name="message"></textarea>
 				<input type="submit" value="ENVOYER">
-				<img src="images/contact.png" alt="Un renne apport les cadeaux" />
 			</form>
+			<img src="images/contact.png" alt="Un renne apport les cadeaux" />
 		</div>
-	</map>
-</div>
+
 </body>
 </html>
