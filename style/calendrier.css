@@ -134,7 +134,12 @@ li.beige a:visited {
 }
 
 .btn_close {
+	margin: 10px;
 	color: #37BC9B;
+}
+
+.btn_close:hover {
+	color: #E9573F;
 }
 
 .pageCalendrier h2 {
@@ -142,16 +147,46 @@ li.beige a:visited {
 	font-size: 40px;
 }
 
-.pageCalendrier picture {
-	text-align: center;
+.pageCalendrier h2 img {
+	width: 50px;
+}
+
+.pageCalendrier{
+	margin: 0 10% 0 10%;
 }
 
 .pageCalendrier picture img {
-	max-height: 150px;
+	max-height: 230px;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.pageCalendrier h2 img {
-	width: 50px;
+.pageCalendrier h4 {
+	text-transform: uppercase;
+	text-align: center;
+	color: #8CC152;
+	font-size: 22px;
+	font-weight: lighter;
+}
+
+.btn_article {
+	display: block;
+	width: 100px;
+	height: 35px;
+	line-height: 35px;
+	font-size: 17px;
+	text-transform: uppercase;
+	text-align: center;
+	border: #E9573F 2px solid;
+	color: #E9573F;
+	margin: auto;
+	margin-bottom: 15px;
+}
+
+.btn_article:hover {
+	border: #37BC9B 2px solid;
+	color: #37BC9B;
 }
 
 .jour25{
@@ -160,45 +195,51 @@ li.beige a:visited {
 
 /****CONTACT****/
 
-#contact{
-	margin-left: 200px;
-	font-size: 18px;
-}
-
-.map{
-	width: 600px;
+#map{
 	height: 100%;
-	position: fixed;
-	background-color: #DDE4E9;
-	top: 0;
+	width: 600px;
+	top: 0px;
+	left: 200px;
+	position: fixed !important;
 }
 
-.form{
-	margin-left: 600px;
+#form{
 	padding: 50px;
+	font-size: 18px;
+	margin-left: 800px;
 }
 
-.form p{
+#form p{
 	margin: 0 auto 10px;
 }
 
-.form input[type="text"]{
+#form input[type="text"]{
 	display: block;
 	width: 100%;
 	height: 40px;
 	margin: 20px auto;
+	color: #000;
+	border: 1px solid #A9A9A9;
+	background-color: #fff;
 }
 
-.form input[type="radio"]{
+#form input[type="radio"]{
 	display: block;
 }
 
-.form textarea{
+#form textarea{
 	width: 100%;
 	height: 250px;
+	border: 1px solid #A9A9A9;
+	background-color: #fff;
+	color: #000;
 }
 
-.form input[type="submit"]{
+#form textarea:focus, #form input:focus{
+	border-color: #E9573F;
+}
+
+#form input[type="submit"]{
 	display: block;
 	width: 150px;
 	height: 45px;
@@ -207,26 +248,19 @@ li.beige a:visited {
 	margin: 20px 0 0;
 	font-size: 20px;
 	cursor: pointer;
+	color: #fff;
 }
 
 .radio-inline p{
 	display: inline-block;
 	vertical-align: middle;
-<<<<<<< HEAD
-=======
 }
 
-.form img{
+#form img{
 	position: absolute;
 	bottom: 15px;
 	right: 15px;
->>>>>>> origin/master
-}
-
-.form img{
-	position: absolute;
-	bottom: 15px;
-	right: 15px;
+	z-index: -1;
 }
 
 /*****A PROPOS *****/
@@ -249,6 +283,7 @@ h1{
 h2{
 	color: #E9573F;
 	font-weight: 400;
+	margin: 15px;
 }
 
 p{
@@ -259,4 +294,33 @@ p{
 	display: inline-block;
 	width: 24%;
 	text-align: center;
+}
+
+.twitter-widget ul {
+	margin: 20px 0 0 15px;
+	padding: 0;
+}
+.twitter-widget li {
+	display: inline-block;
+	width: 49%;
+	list-style: none;
+	clear: both;
+}
+.twitter-widget li img, .twitter-widget li .tweets_txt {
+	float: left;
+	margin-bottom: 10px;
+}
+.twitter-widget li img {
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+}
+.twitter-widget li .tweets_txt {
+	width: 350px;
+	margin-left: 10px;
+}
+.twitter-widget li .tweets_txt span {
+	font-style: italic;
+	color: #666;
+	display: block;
 }

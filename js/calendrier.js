@@ -58,7 +58,7 @@ $(document).ready(function() {
 			$(".contenu" + jour).append('<h2>' + jour + ' <img src="images/' + jour + '.png"/> DEC</h2>'
 			+ '<picture>' + media + '</picture>'
 			+ contenu
-			+ '<a href="' + lien + '" target="_blank">Voir plus</a>');
+			+ '<a href="' + lien + '" target="_blank" class="btn_article">Voir plus</a>');
 
 			// Au clique sur une case du calendrier
 			$(".ouverture").click(function(){
