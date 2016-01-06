@@ -50,8 +50,8 @@ $(document).ready(function() {
 			if(statut == "ouvert"){
 				$("#calendrier").append('<li id="' + index
 				+ '" class="' + couleur
-				+ '"><a href="jour' + jour + '.html"><img src="images/'
-				+ jour + '.png"/></a></li>');
+				+ '"><div class="img-center"><a href="jour' + jour + '.html"><img src="images/'
+				+ jour + '.png"/></div></a></li>');
 			}
 
 			// Affichage du contenu sur la bonne page
