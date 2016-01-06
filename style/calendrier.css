@@ -274,13 +274,14 @@ li.beige a:visited {
 /*****A PROPOS *****/
 #apropos{
 	margin-left: 200px;
+	padding: 50px;
 }
 
-p, h1, h2{
+#apropos p, h1, h2{
 	margin-left: 10px;
 }
 
-h1{
+#apropos h1{
 	color: #36B69B;
 	font-size: 35px;
 	text-align: center;
@@ -288,13 +289,13 @@ h1{
 	text-transform: uppercase;
 }
 
-h2{
+#apropos h2{
 	color: #E9573F;
 	font-weight: 400;
 	margin: 15px;
 }
 
-p{
+#apropos p{
 	margin: 10px;
 }
 
@@ -303,7 +304,6 @@ p{
 	width: 24%;
 	text-align: center;
 }
-<<<<<<< HEAD
 
 .twitter-widget ul {
 	margin: 20px 0 0 15px;
@@ -333,5 +333,3 @@ p{
 	color: #666;
 	display: block;
 }
-=======
->>>>>>> origin/master
