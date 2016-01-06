@@ -277,10 +277,6 @@ li.beige a:visited {
 	padding: 50px;
 }
 
-#apropos p, h1, h2{
-	margin-left: 10px;
-}
-
 #apropos h1{
 	color: #36B69B;
 	font-size: 35px;
@@ -292,17 +288,17 @@ li.beige a:visited {
 #apropos h2{
 	color: #E9573F;
 	font-weight: 400;
-	margin: 15px;
-}
-
-#apropos p{
-	margin: 10px;
+	margin: 25px 0;
 }
 
 #membres li{
 	display: inline-block;
 	width: 24%;
 	text-align: center;
+}
+
+.twitter-widget{
+	margin-top: 50px;
 }
 
 .twitter-widget ul {
