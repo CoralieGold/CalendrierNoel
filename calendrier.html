@@ -14,18 +14,32 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="js/calendrier.js"></script>
 <script src="js/jquery.mousewheel.js"></script>
+<script src="js/menu.js"></script>
 </head>
 <body>
-	<nav>
-		<a href="calendrier.html"><img src="images/logo.png" alt="logo"></a>
+	<!-- Menu taille ecran ordinateur-->
+	<nav class="menuOrdi">
+		<a href="calendrier.html"><img src="images/logo.png" class="logo" alt="logo"></a>
 		<div class="vertical-center">
+			<ul>
+				<li><a href="calendrier.html" class="active">LE CALENDRIER</a></li>
+				<li><a href="apropos.html">À PROPOS</a></li>
+				<li><a href="contact.html" >CONTACT</a></li>
+			</ul>
+		</div>
+	</nav>
+
+	<!-- Menu taille ecran mobile-->
+	<nav class="menuMobile">
+		<img src="images/menuHamburgerBlue.png" class="menuHamburger" alt="bouton d'accés au menu">
+		<a href="calendrier.html"><img src="images/logo.png" class="logo" alt="logo"></a>
 			<ul>
 				<li><a href="calendrier.html" class="active">LE CALENDRIER</a></li>
 				<li><a href="apropos.html">À PROPOS</a></li>
 				<li><a href="contact.html">CONTACT</a></li>
 			</ul>
-		</div>
 	</nav>
+
 	<ul id="calendrier"></ul>
 	<div id="articles"></div>
 

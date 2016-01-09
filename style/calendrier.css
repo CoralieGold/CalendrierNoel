@@ -25,7 +25,26 @@ a.active{
 }
 
 /****MENU****/
-nav{
+.menuHamburger{
+	position: absolute;
+	top: 10px;
+	width: 35px;
+	cursor: pointer;
+	right: -60px;
+}
+
+.menuMobile{
+	display: none;
+	left: -200px;
+	transition: left 1s ease-in-out;
+}
+
+.menu-slide{
+	left: 0px;
+	transition: left 1s ease-in-out;
+}
+
+nav {
 	width: 200px;
 	background: #fff;
 	position: fixed;
@@ -36,8 +55,13 @@ nav{
 	z-index: 2;
 }
 
-nav img{
+.menuOrdi .logo{
 	margin: 100px auto 0;
+	display: block;
+}
+
+.menuMobile .logo{
+	margin: 35px auto 35px;
 	display: block;
 }
 
@@ -158,8 +182,8 @@ li.beige a:visited {
 .pageCalendrier picture img {
 	max-height: 230px;
 	display: block;
-    margin-left: auto;
-    margin-right: auto;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .pageCalendrier h4 {
@@ -191,10 +215,10 @@ li.beige a:visited {
 
 .img-center{
 	width: 150px;
-  height: 150px;
-  margin: auto;
-  position: absolute;
-  top: 0; left: 0; bottom: 0; right: 0;
+	height: 150px;
+	margin: auto;
+	position: absolute;
+	top: 0; left: 0; bottom: 0; right: 0;
 }
 
 .jour25{
@@ -271,6 +295,15 @@ li.beige a:visited {
 	z-index: -1;
 }
 
+#form h1{
+	color: #36B69B;
+	font-size: 35px;
+	text-align: center;
+	font-weight: 300;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+}
+
 /*****A PROPOS *****/
 #apropos{
 	margin-left: 200px;
@@ -328,4 +361,62 @@ li.beige a:visited {
 	font-style: italic;
 	color: #666;
 	display: block;
+}
+
+/*** RESPONSIVE DESIGN ***/
+
+@media screen and (max-width: 980px) {
+	#map {
+		height: 300px;
+		width: 100%;
+		top: 0px;
+		left: 200px;
+		position: relative !important;
+	}
+
+	#form {
+    margin-left: 200px;
+	}
+
+	#form img {
+    display: none;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.menuOrdi{
+		display: none;
+	}
+
+	.menuMobile{
+		display: block;
+	}
+
+	#form {
+    margin-left: 0px;
+		padding: 25px;
+	}
+	#map{
+		left: 0;
+	}
+
+	#apropos{
+		margin-left: 0px;
+		padding: 25px;
+	}
+
+	#membres li {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin: 20px auto;
+	}
+
+	.twitter-widget {
+    display: none;
+	}
+
+	#calendrier{
+		margin-left: 0px;
+	}
 }

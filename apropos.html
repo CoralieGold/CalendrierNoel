@@ -13,10 +13,12 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script src="js/tweecool.js"></script>
 	<script src="js/twitter.js"></script>
+	<script src="js/menu.js"></script>
 </head>
 <body>
-	<nav>
-		<a href="calendrier.html"><img src="images/logo.png" alt="logo"></a>
+	<!-- Menu taille ecran ordinateur-->
+	<nav class="menuOrdi">
+		<a href="calendrier.html"><img src="images/logo.png" class="logo" alt="logo"></a>
 		<div class="vertical-center">
 			<ul>
 				<li><a href="calendrier.html">LE CALENDRIER</a></li>
@@ -25,6 +27,18 @@
 			</ul>
 		</div>
 	</nav>
+
+	<!-- Menu taille ecran mobile-->
+	<nav class="menuMobile">
+		<img src="images/menuHamburgerBlue.png" class="menuHamburger" alt="bouton d'accés au menu">
+		<a href="calendrier.html"><img src="images/logo.png" class="logo" alt="logo"></a>
+			<ul>
+				<li><a href="calendrier.html">LE CALENDRIER</a></li>
+				<li><a href="apropos.html" class="active">À PROPOS</a></li>
+				<li><a href="contact.html">CONTACT</a></li>
+			</ul>
+	</nav>
+
 	<section id="apropos">
 		<h1>A propos</h1>
 		<article>
@@ -34,7 +48,7 @@ Chaque année, nous organisons toute une campagne de communication interplanéta
 Nous sommes, évidemment, présents le jour J. Le père Noël vient livrer le projet terminé, avec tous les cadeaux choisis par notre directrice commerciale, le pingouin. <br/>
 Vous pensez que le 25, au matin, tout est fini ? Et non ! Le reste de l’équipe est toujours là pour vous informer, vous aider, et… vous donner envie de recommencer l’an prochain !</p>
 		</article>
-	
+
 		<article>
 			<h2>Membres</h2>
 			<ul id="membres">
@@ -60,7 +74,7 @@ Vous pensez que le 25, au matin, tout est fini ? Et non ! Le reste de l’équip
 				</li>
 			</ul>
 		</article>
-		
+
 		<article class="twitter-widget">
 			<h2>Les derniers tweets</h2>
 			<div id="tweecool"></div>

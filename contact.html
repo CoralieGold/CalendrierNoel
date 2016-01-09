@@ -11,12 +11,14 @@
 </script>
 <![endif]-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script src="js/maps.js"></script>
+<script src="js/menu.js"></script>
+<script src="js/contact.js"></script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBtBgMxdfTt6psQOgPnn5mDaNWTCbrrGvM&callback=initMap" async defer></script>
 </head>
 <body>
-	<nav>
-		<a href="calendrier.html"><img src="images/logo.png" alt="logo"></a>
+	<!-- Menu taille ecran ordinateur-->
+	<nav class="menuOrdi">
+		<a href="calendrier.html"><img src="images/logo.png" class="logo" alt="logo"></a>
 		<div class="vertical-center">
 			<ul>
 				<li><a href="calendrier.html">LE CALENDRIER</a></li>
@@ -25,28 +27,41 @@
 			</ul>
 		</div>
 	</nav>
-		<div id="map"></div>
 
-		<div id="form">
-			<p class="italique">Vous voulez nous faire parvenir votre liste de Noël ? Ou nous poser des questions ?</p>
-			<p>Remplissez le formulaire ci-dessous !</p>
-			<form action="">
-				<input type="text" id="prenom" placeholder="Prénom" required>
-				<input type="text" id="nom" placeholder="Nom" required>
-				<input type="text" id="email" placeholder="Email" required>
-				<div class="radio-inline">
-					<p><input type="radio" name="type-demande" value="liste"></p>
-					<p>Je veux envoyer ma liste de cadeaux</p>
-				</div>
-				<div class="radio-inline">
-					<p><input type="radio" name="type-demande" value="question"></p>
-					<p>J'ai une question</p>
-				</div>
-				<textarea name="message"></textarea>
-				<input type="submit" value="ENVOYER">
-			</form>
-			<img src="images/contact.png" alt="Un renne apport les cadeaux" />
-		</div>
+	<!-- Menu taille ecran mobile-->
+	<nav class="menuMobile">
+		<img src="images/menuHamburgerBlue.png" class="menuHamburger" alt="bouton d'accés au menu">
+		<a href="calendrier.html"><img src="images/logo.png" class="logo" alt="logo"></a>
+			<ul>
+				<li><a href="calendrier.html">LE CALENDRIER</a></li>
+				<li><a href="apropos.html">À PROPOS</a></li>
+				<li><a href="contact.html" class="active">CONTACT</a></li>
+			</ul>
+	</nav>
+
+	<div id="form">
+		<h1>Contact</h1>
+		<p class="italique">Vous voulez nous faire parvenir votre liste de Noël ? Ou nous poser des questions ?</p>
+		<p>Remplissez le formulaire ci-dessous !</p>
+		<form action="javascript:traitementForm()">
+			<input type="text" id="prenom" placeholder="Prénom" required>
+			<input type="text" id="nom" placeholder="Nom" required>
+			<input type="text" id="email" placeholder="Email" required>
+			<div class="radio-inline">
+				<p><input type="radio" name="demande" id="liste" value="liste" required></p>
+				<p>Je veux envoyer ma liste de cadeaux</p>
+			</div>
+			<div class="radio-inline">
+				<p><input type="radio" name="demande" id="question" value="question" required></p>
+				<p>J'ai une question</p>
+			</div>
+			<textarea id="message"></textarea>
+			<input type="submit" value="ENVOYER">
+		</form>
+		<img src="images/contact.png" alt="Un renne apport les cadeaux" />
+	</div>
+
+	<div id="map"></div>
 
 </body>
 </html>
