@@ -6,7 +6,7 @@ function initMap() {
   // Create a map object and specify the DOM element for display.
   var map = new google.maps.Map(document.getElementById('map'), {
     center: myLatLng,
-    scrollwheel: false,
+    scrollwheel: true,
     zoom: 10
   });
 
@@ -16,6 +16,15 @@ function initMap() {
     position: myLatLng,
     title: 'Pere Noel'
   });
+
+  //Create an info window for the marker
+  var infowindow = new google.maps.InfoWindow({
+  content:"Maison du Père Noël"
+  });
+
+  google.maps.event.addListener(marker, 'click', function() {
+    infowindow.open(map,marker);
+    });
 }
 
 // FORM
