@@ -168,11 +168,13 @@ li.beige a:visited {
 
 .pageCalendrier h2 {
 	text-align: center;
-	font-size: 40px;
+	font-size: 60px;
+	margin: 0 0px 40px;
 }
 
 .pageCalendrier h2 img {
-	width: 50px;
+	width: 78px;
+	vertical-align: bottom;
 }
 
 .pageCalendrier{
@@ -180,7 +182,8 @@ li.beige a:visited {
 }
 
 .pageCalendrier picture img {
-	max-height: 230px;
+	max-height: 270px;
+	width: auto;
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
@@ -192,6 +195,7 @@ li.beige a:visited {
 	color: #8CC152;
 	font-size: 22px;
 	font-weight: lighter;
+	margin: 20px 0;
 }
 
 .btn_article {
@@ -204,8 +208,7 @@ li.beige a:visited {
 	text-align: center;
 	border: #E9573F 2px solid;
 	color: #E9573F;
-	margin: auto;
-	margin-bottom: 15px;
+	margin: 50px auto;
 }
 
 .btn_article:hover {
@@ -221,8 +224,10 @@ li.beige a:visited {
 	top: 0; left: 0; bottom: 0; right: 0;
 }
 
-.jour25{
-	background-color: red;
+iframe{
+	margin: auto;
+	display: block;
+	widows: 100%;
 }
 
 /****CONTACT****/
@@ -375,11 +380,11 @@ li.beige a:visited {
 	}
 
 	#form {
-    margin-left: 200px;
+		margin-left: 200px;
 	}
 
 	#form img {
-    display: none;
+		display: none;
 	}
 }
 
@@ -393,7 +398,7 @@ li.beige a:visited {
 	}
 
 	#form {
-    margin-left: 0px;
+		margin-left: 0px;
 		padding: 25px;
 	}
 	#map{
@@ -406,17 +411,32 @@ li.beige a:visited {
 	}
 
 	#membres li {
-    display: block;
-    width: 100%;
-    text-align: center;
-    margin: 20px auto;
+		display: block;
+		width: 100%;
+		text-align: center;
+		margin: 20px auto;
 	}
 
 	.twitter-widget {
-    display: none;
+		display: none;
 	}
 
 	#calendrier{
 		margin-left: 0px;
+	}
+
+	.pageCalendrier picture img {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 368px) {
+	.pageCalendrier h2 {
+		font-size: 50px;
+	}
+
+	.pageCalendrier h2 img {
+		width: 70px;
+		max-height: none;
 	}
 }
